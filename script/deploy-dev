@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ssh app@104.236.112.83 <<EOF
+	cd ~/jenkins-build-per-branch
+	git pull
+	npm install --production
+	forever restartall
+	exit
+EOF

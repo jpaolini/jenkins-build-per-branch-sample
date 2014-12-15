@@ -1,0 +1,16 @@
+{
+	"name": "jenkins-build-per-branch",
+	"description": "jenkins sample application",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"test": "./node_modules/mocha/bin/mocha -R xunit ./test/test.js > test-report.xml"
+	},
+	"dependencies": {
+		"express": "latest"
+	},
+	"devDependencies": {
+		"mocha": "latest",
+		"supertest": "latest"
+	}
+}
