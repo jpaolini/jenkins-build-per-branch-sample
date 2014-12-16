@@ -7,3 +7,10 @@ describe('GET / ', function(){
 			.expect('hello world', done);
 	});
 });
+
+describe('GET /test', function(){
+	it('respond with test', function(done){
+		request(app).get('/test')
+			.expect('test', done);
+	});
+});
